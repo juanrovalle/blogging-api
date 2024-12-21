@@ -19,10 +19,9 @@ Before running the application, ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/juanrovalle/blogging-api.git
    cd blogging-api
    ```
-
 2. Build the project with Maven:
    ```bash
    mvn clean package
@@ -35,9 +34,7 @@ Before running the application, ensure you have the following installed:
 
 4. Access the API at:
    ```
-
-http://localhost:8080
-
+   http://localhost:8080/api/posts
    ```
 
 ### Using Docker
@@ -54,7 +51,7 @@ http://localhost:8080
 
 3. Access the API at:
    ```
-   http://localhost:8080
+   http://localhost:8080/api/posts
    ```
 
 ## H2 Database Configuration
@@ -125,6 +122,9 @@ If more time were available, I would:
 6. **Add MapStruct for DTOs and Validation**:
     - Use MapStruct to simplify entity-to-DTO mapping and vice versa.
     - Enhance validation using `spring-boot-starter-validation` to ensure data integrity and proper error handling.
+7. **Add API Versioning**:
+    - Implement API versioning to ensure backward compatibility for clients.
+    - Use versioned routes like `/v1/api/posts` and `/v2/api/posts` for introducing breaking changes.
 
 ## Troubleshooting
 
